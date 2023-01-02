@@ -1,38 +1,441 @@
-.App {
-  text-align: center;
+* {
+  margin: 0vw;
+  padding: 0vw;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*::selection {
+  background: rgb(169, 0, 169);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*************** NavBar  *********************/
+
+.logo {
+  height: 80px;
+  background-color: rgba(205, 198, 198, 0);
+}
+.logoDiv {
+  /* border: 1px solid black; */
+
+  align-items: center;
+
+  z-index: 15;
+  background-color: rgba(205, 198, 198, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.profileDiv {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-left: 87%;
+  height: 85px;
+  width: 10%;
+  font-family: sans-serif;
+  z-index: 1500;
+  /* background-color: rgba(205, 198, 198, 1); */
+  margin-top: 8px;
+}
+
+.forZindex {
+  z-index: 10000 !important;
+}
+
+.profileSec {
+  font-size: 1.4vw;
+  font-weight: bold;
+  margin: 0px auto;
+  color: white;
+  background-color: rgba(205, 198, 198, 0);
+  z-index: 1500;
+  /* border: 1px solid black; */
+}
+.profileSec:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+.btnProfile {
+  color: rgb(72, 72, 72);
+  font-weight: bold;
+  /* font-size: 16px; */
+  /* text-align: start;
+  padding-left: 140px; */
+}
+.btnProfile:hover {
+  color: purple;
+  background-color: rgb(255, 244, 255);
+}
+.btnProfile:active {
+  color: navy;
+}
+
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: rgb(255 255 255);
+  --bs-navbar-hover-color: yellow !important;
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color: rgb(238, 255, 198) !important;
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+  --bs-navbar-toggler-border-radius: 0.375rem;
+  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+.btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  background-color: white !important;
+  border: 0;
+  border-radius: 0.375rem;
+  opacity: 1 !important;
+}
+
+/*************** Body  *********************/
+
+#gridSec {
+  /* border: .1vw solid black; */
+  margin-top: 102px;
+  min-height: 88vh;
+}
+
+.chartAndGraph {
+  min-height: 44vh;
+}
+
+.pendingTaskSection {
+  min-height: 44vh;
+}
+
+#inTextNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-top: .1vw solid rgb(94, 94, 94); */
+}
+
+td {
+  text-align: left;
+  padding-left: 5%;
+  font-size: 1.25vw;
+}
+
+.quantityCenter {
+  text-align: center;
+  padding: 0%;
+  border-left: 0.1vw solid rgb(94, 94, 94);
+}
+table {
+  width: 74%;
+  border: 0.1vw solid rgb(94, 94, 94);
+  border-collapse: collapse;
+}
+th {
+  text-align: center;
+  font-size: 1.25vw;
+  font-weight: 500;
+  background-color: #6d6d6d;
+  color: white;
+  border-bottom: 0.1vw solid rgb(94, 94, 94);
+}
+
+.piChart {
+  height: 40vh;
+}
+.barChart {
+  height: 30vh;
+}
+
+.dTaskNameHeading {
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+.pendingFMS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4vh auto 4vh auto;
+  font-size: 1.75vw;
+  border-bottom: 0.25vw solid rgb(106, 106, 106);
+  width: 36%;
+  height: 6vh;
+}
+#pendingTaskArea {
+  height: 20.15vw;
+  border-bottom: none;
+}
+
+.upcomingFMS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4vh auto 4vh auto;
+  font-size: 1.75vw;
+  border-bottom: 0.25vw solid rgb(106, 106, 106);
+  width: 36%;
+  height: 6vh;
+}
+
+#upcomingTaskArea {
+  height: 20.05vw;
+}
+
+.btn1 {
+  width: 30vw;
+  text-align: left;
+  padding-left: 5%;
+  margin: 5px 0px;
+  height: 6vh;
+  font-size: 1.2vw;
+  border-radius: 1vw;
+  background-color: rgb(255, 222, 222);
+  border: 1px solid rgb(83, 0, 0);
+  box-shadow: 0.5px 1px 2px rgb(83, 0, 0) inset;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  background-color: rgb(148, 132, 255);
+  color: white;
+  font-size: 1.21vw;
+  border: 1px solid rgb(50, 24, 222);
+  box-shadow: 0.5px 1px 2px rgb(50, 24, 222) inset;
+}
+
+.btnUpComing {
+  background-color: rgb(160, 219, 170);
+}
+
+/************************************* Footer ************/
+
+#footerDivId {
+  display: flex;
+  justify-content: center;
+
+  background-color: rgb(12, 64, 142);
+  color: rgb(255, 255, 255);
+
+  text-align: center;
+  height: 150px;
+  border-top: 2px solid rgb(8, 77, 181);
+}
+
+#developerName p {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(12, 64, 142);
+  color: rgb(255, 255, 255);
+  padding: 0px 8px 0px 0px;
+  font-family: Courier, monospace;
+  margin-bottom: 0px;
+  font-size: 0.5vw;
+  /* border: 1px solid white; */
+}
+
+#footerHeading {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+#copyright {
+  display: flex;
+  margin-top: 100px;
+  font-weight: normal;
+  font-size: 1vw;
+
+  /* border: 1px solid white; */
+}
+
+/****************************** Profile  ********************************/
+
+#bpCreation {
+  padding-top: 20px;
+  color: rgb(0, 0, 151);
+  /* border-bottom: 1px solid rgb(0, 0, 151); */
+}
+
+#formID {
+  margin-top: 110px;
+}
+
+#formID b {
+  color: rgb(91, 91, 91);
+}
+
+#fmsSection {
+  min-height: 70vh;
+  margin-top: 110px;
+}
+
+#helpTicketSection {
+  min-height: 70vh;
+  margin-top: 110px;
+}
+
+#contactUsSection {
+  min-height: 90vh;
+  margin-top: 110px;
+}
+
+.accordion-button {
+  font-size: 1.1vw;
+}
+.accordion {
+  font-size: 1vw;
+  font-family: sans-serif;
+}
+
+/********************************** */
+
+@media only screen and (min-width: 1000px) {
+  .marginID {
+    padding-left: 22%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar {
+    font-size: 1.1vw;
+    font-weight: bolder;
+  }
+
+  .nav-link {
+    padding-left: 30px !important;
+  }
+
+  .navHeight {
+    max-height: 85px;
+  }
+
+  #developerName p {
+    font-size: 0.8vw;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .profileDiv {
+    display: flex;
+    margin-left: 77%;
+    margin-top: 10px;
+  }
+
+  .piChart {
+    height: 20vh;
+  }
+  .barChart {
+    height: 15vh;
+  }
+
+  .chartAndGraph {
+    min-height: 26vh !important;
+  }
+
+  .pendingTaskSection {
+    min-height: 39vh;
+  }
+
+  .btn1 {
+    font-size: 2.2vw;
+    width: 40vw;
+    height: 4vh;
+    border-radius: 1.5vw;
+  }
+
+  .btn1:hover {
+    font-size: 2.25vw;
+  }
+
+  td {
+    font-size: 2vw;
+  }
+  th {
+    font-size: 2vw;
+  }
+
+  #copyright {
+    font-size: 1.5vw;
+  }
+
+  .accordion-button {
+    font-size: 2.3vw;
+  }
+  .accordion {
+    font-size: 2vw;
+  }
+
+  .nav-link {
+    padding: 0px !important;
+  }
+
+  .marginInLi {
+    padding: 8px 0px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profileDiv {
+    display: flex;
+    margin-left: 65%;
+    margin-top: 10px;
+  }
+  #developerName p {
+    font-size: 2vw;
+  }
+
+  .btn1 {
+    font-size: 2.5vw;
+    width: 45vw;
+    height: 4vh;
+    border-radius: 1.5vw;
+    margin: 3px 0px;
+  }
+  .btn1:hover {
+    font-size: 2.6vw;
+  }
+
+  td {
+    font-size: 2.5vw;
+  }
+  th {
+    font-size: 2.5vw;
+  }
+
+  .dTaskNameHeading {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+
+  #copyright {
+    font-size: 2vw;
+  }
+
+  .accordion-button {
+    font-size: 3.5vw;
+  }
+
+  .accordion {
+    font-size: 3vw;
   }
 }
