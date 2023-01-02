@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SonaInternalApp-React/static/css/main.a1659efd.css",
-    "main.js": "/SonaInternalApp-React/static/js/main.30f082eb.js",
+    "main.css": "/SonaInternalApp-React/static/css/main.50c90bdd.css",
+    "main.js": "/SonaInternalApp-React/static/js/main.340b3a15.js",
     "static/media/firstSlide.jpg": "/SonaInternalApp-React/static/media/firstSlide.c38116f3d2848d21e3dd.jpg",
     "static/media/barChart.png": "/SonaInternalApp-React/static/media/barChart.257d1240eeeef8b87676.png",
     "static/media/thirdSlide.jpg": "/SonaInternalApp-React/static/media/thirdSlide.31353057f82088ed00d3.jpg",
@@ -11,11 +11,11 @@
     "static/media/dp2.jpeg": "/SonaInternalApp-React/static/media/dp2.0a2d511a6648c1cb813a.jpeg",
     "static/media/sona_logo.png": "/SonaInternalApp-React/static/media/sona_logo.ca9a1e9ecaff4ae352be.png",
     "index.html": "/SonaInternalApp-React/index.html",
-    "main.a1659efd.css.map": "/SonaInternalApp-React/static/css/main.a1659efd.css.map",
-    "main.30f082eb.js.map": "/SonaInternalApp-React/static/js/main.30f082eb.js.map"
+    "main.50c90bdd.css.map": "/SonaInternalApp-React/static/css/main.50c90bdd.css.map",
+    "main.340b3a15.js.map": "/SonaInternalApp-React/static/js/main.340b3a15.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1659efd.css",
-    "static/js/main.30f082eb.js"
+    "static/css/main.50c90bdd.css",
+    "static/js/main.340b3a15.js"
   ]
 }
