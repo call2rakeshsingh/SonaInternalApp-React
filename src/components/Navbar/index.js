@@ -135,7 +135,7 @@ const Navbar = () => {
             >
               <ul className="navbar-nav me-2 mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <NavLink to="/index" activeStyle className="nav-link">
+                  <NavLink to="SonaInternalApp-React/index" activeStyle className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -147,7 +147,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item">
-                  <NavLink to="/form" activeStyle className="nav-link">
+                  <NavLink to="SonaInternalApp-React/form" activeStyle className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -158,7 +158,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/fms" activeStyle className="nav-link">
+                  <NavLink to="SonaInternalApp-React/fms" activeStyle className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -169,7 +169,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/helpTicket" activeStyle className="nav-link">
+                  <NavLink to="SonaInternalApp-React/helpTicket" activeStyle className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -180,7 +180,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/contactUs" activeStyle className="nav-link">
+                  <NavLink to="SonaInternalApp-React/contactUs" activeStyle className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"

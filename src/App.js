@@ -14,12 +14,12 @@ return (
 	<Router>
 	<Navbar />
 	<Routes>
-		<Route path='/form' element={<Form/>} />
-		<Route path='/fms' element={<Fms/>} />
-		<Route path='/helpTicket' element={<HelpTicket/>} />
-		<Route path='/contactUs' element={<ContactUs/>} />
-		<Route path='/index' element={<Dashboard />} />
-		<Route path='/' element={<Dashboard />} />
+		<Route exact path='SonaInternalApp-React/' element={<Dashboard />} />
+		<Route path='SonaInternalApp-React/form' element={<Form/>} />
+		<Route path='SonaInternalApp-React/fms' element={<Fms/>} />
+		<Route path='SonaInternalApp-React/helpTicket' element={<HelpTicket/>} />
+		<Route path='SonaInternalApp-React/contactUs' element={<ContactUs/>} />
+		<Route path='SonaInternalApp-React/index' element={<Dashboard />} />
 	</Routes>
 	</Router>
 );
