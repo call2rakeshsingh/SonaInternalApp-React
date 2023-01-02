@@ -1,7 +1,7 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import FAQ from './ContactUs/index';
-import ContactUsSlides from './ContactUs/ContactUsSlides';
+import Footer from '../../components/Footer';
+import FAQ from './Index';
+import ContactUsSlides from './ContactUsSlides'
 
 const ContactUs = () => {
 return (
@@ -11,9 +11,7 @@ return (
 	<FAQ />
 	</div>
 	<Footer />
-
 	</>
-	
 );
 };
 

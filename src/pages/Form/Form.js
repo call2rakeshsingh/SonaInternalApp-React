@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import Footer from '../components/Footer';
+import Footer from "../../components/Footer";
 
 
 const Form = () => {

@@ -109,6 +109,8 @@
   opacity: 1 !important;
 }
 
+
+
 /*************** Body  *********************/
 
 #gridSec {
@@ -307,6 +309,11 @@ th {
   font-family: sans-serif;
 }
 
+
+#YourTicketTable{
+  margin-top: 110px;
+  min-height: 70vh;
+}
 /********************************** */
 
 @media only screen and (min-width: 1000px) {
@@ -314,13 +321,25 @@ th {
     padding-left: 22%;
   }
 
+
+
   .navbar {
     font-size: 1.1vw;
-    font-weight: bolder;
+    font-weight: bold;
   }
 
   .nav-link {
-    padding-left: 30px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    border-radius: 5px !important;
+  }
+
+  .nav-link:hover{
+    background-color: rgb(56, 167, 252);
+  }
+
+  .navbar-nav .active{
+    border-bottom: 4px solid rgb(255, 165, 165);
   }
 
   .navHeight {

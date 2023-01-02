@@ -1,8 +1,8 @@
 import React from 'react';
-
 import piChart from "./piChart.svg";
 import barChart from "./barChart.png";
-import Footer from '../components/Footer';
+import Footer from '../../components/Footer';
+
 
 
 function TotalAssignWorkDashboard() {
@@ -147,6 +147,7 @@ return (
 	<div>
 	<GridSec />
 	<Footer />
+	
 	</div>
 );
 };
