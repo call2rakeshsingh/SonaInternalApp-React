@@ -1,6 +1,6 @@
 import React from 'react';
-import piChart from "./piChart.svg";
-import barChart from "./barChart.png";
+import piChart from "./DBImg/piChart.svg"
+import barChart from "./DBImg/barChart.png";
 import Footer from '../../components/Footer';
 
 
@@ -35,11 +35,12 @@ function TotalAssignWorkDashboard() {
 			</tr>
 		  </table>
 		</div>
-
 </div>
 	  </>
 	);
   }
+
+
 
   function PendingTaskName() {
 	return (
@@ -77,14 +78,12 @@ function TotalAssignWorkDashboard() {
 		  <p className='d-flex justify-content-center dTaskNameHeading text-success'>Upcoming FMS Name</p>
 		  <div className='d-flex justify-content-center'>
 
-		
 		  <input
 			type="button"
 			value="Quarterly Balance Sheet FMS"
 			className="btn1 btnUpComing"
 		  />
 		</div>
-		  
 		</div>
 	  </>
 	);
@@ -108,7 +107,6 @@ const GridSec = () => {
 		  <img src={piChart} className="img-fluid piChart" alt="No" />
 		</div>
 
-
 		{/* Bar Chart */}
 		<div className="col-6 col-md-12 col-lg-6 border chartAndGraph d-flex justify-content-center align-items-center">
 		<img src={barChart} className="barChart img-fluid barChart" alt="No" />
@@ -122,7 +120,6 @@ const GridSec = () => {
 		</div>
 		</div>
 		</div>
-
 
 		{/* Pending FMS Name */}
 		<div className='col-md-6 border'>
@@ -139,7 +136,6 @@ const GridSec = () => {
 		</div>
 		</>
 	);
-
 }
 
 const Dashboard = () => {
@@ -147,7 +143,6 @@ return (
 	<div>
 	<GridSec />
 	<Footer />
-	
 	</div>
 );
 };

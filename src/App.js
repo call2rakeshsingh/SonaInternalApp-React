@@ -25,13 +25,12 @@ return (
 	<BrowserRouter>
 	<Navbar />
 	<Routes>
-		<Route exact path='SonaInternalApp-React/' element={<Dashboard />} />
+		<Route path='SonaInternalApp-React/' element={<Dashboard />} />
 		<Route path='SonaInternalApp-React/form' element={<Form/>} />
 		<Route path='SonaInternalApp-React/fms' element={<Fms/>} />
-		<Route path='SonaInternalApp-React/helpTicket' element={<HelpTicketForm pullDatas={pullData}/>} />
+		<Route path='SonaInternalApp-React/helpticket' element={<HelpTicketForm pullDatas={pullData}/>} />
+		<Route path='SonaInternalApp-React/contactus' element={<ContactUs />} />
 		<Route path='SonaInternalApp-React/yourtickets' element={<HelpTicketData ticketDataArray={saveInputVal}/>} />
-		<Route path='SonaInternalApp-React/contactUs' element={<ContactUs />} />
-		<Route path='SonaInternalApp-React/index' element={<Dashboard />} />
 	</Routes>
 	</BrowserRouter>
 );
