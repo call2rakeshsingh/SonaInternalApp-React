@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { HashRouter, Routes, Route} from 'react-router-dom';
 import Dashboard from './pages/Dashboard/index';
 import Form from './pages/Form/Form';
 import HelpTicketForm from './pages/HelpTicket/HelpTicketForm';
@@ -22,7 +22,7 @@ function App() {
 
 
 return (
-	<BrowserRouter>
+	<HashRouter>
 	<Navbar />
 	<Routes>
 		<Route exact path= 'SonaInternalApp-React/' element={<Dashboard />} />
@@ -32,7 +32,7 @@ return (
 		<Route exact path= 'SonaInternalApp-React/contactus' element={<ContactUs />} />
 		<Route exact path= 'SonaInternalApp-React/yourticket' element={<HelpTicketData ticketDataArray={saveInputVal}/>} />
 	</Routes>
-	</BrowserRouter>
+	</HashRouter>
 );
 }
 
