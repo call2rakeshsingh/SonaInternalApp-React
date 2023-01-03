@@ -305,6 +305,7 @@ const HelpTicketForm = (props) => {
           className="col-md-6 offset-md-3 shadow p-5 mb-5 bg-white rounded "
           id="formID"
           onSubmit={onSubmitHandler}
+          autoComplete = "off"
         >
           <h1 className="ui text-center mb-5" id="bpCreation">
             Help Ticket Form

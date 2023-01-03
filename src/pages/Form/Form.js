@@ -1,6 +1,4 @@
 import React from "react";
-import { useState } from "react";
-
 import Footer from "../../components/Footer";
 
 
@@ -16,7 +14,7 @@ const Form = () => {
    
 
 
-      <form className="col-md-6 offset-md-3 shadow p-5 mb-5 bg-white rounded" id="formID" onSubmit={e => {handleSubmit(e)}}>
+      <form className="col-md-6 offset-md-3 shadow p-5 mb-5 bg-white rounded" id="formID" autoComplete = "off" onSubmit={e => {handleSubmit(e)}}>
 
 	  <h1 className="ui text-center mb-5" id="bpCreation">BP Creation Form</h1>
 
