@@ -38,7 +38,7 @@ const Navbar = () => {
             >
               <ul className="navbar-nav me-2 mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <NavLink exact to="SonaInternalApp-React/" className="nav-link">
+                  <NavLink exact to= 'SonaInternalApp-React/' className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item">
-                  <NavLink exact to="SonaInternalApp-React/form" className="nav-link">
+                  <NavLink exact to= 'SonaInternalApp-React/form' className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -61,7 +61,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact to="SonaInternalApp-React/fms" className="nav-link">
+                  <NavLink exact to= 'SonaInternalApp-React/fms' className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -72,7 +72,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact to="SonaInternalApp-React/helpticket" className="nav-link">
+                  <NavLink exact to= 'SonaInternalApp-React/helpticket' className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -83,7 +83,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact to="SonaInternalApp-React/contactus" className="nav-link">
+                  <NavLink exact to= 'SonaInternalApp-React/contactus' className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
@@ -94,7 +94,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact to="SonaInternalApp-React/yourtickets" className="nav-link">
+                  <NavLink exact to= 'SonaInternalApp-React/yourticket' className="nav-link">
                     <div
                       className="marginInLi"
                       data-bs-toggle="collapse"
