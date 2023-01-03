@@ -25,12 +25,12 @@ return (
 	<HashRouter>
 	<Navbar />
 	<Routes>
-		<Route exact path= 'SonaInternalApp-React/' element={<Dashboard />} />
-		<Route exact path= 'SonaInternalApp-React/form' element={<Form/>} />
-		<Route exact path= 'SonaInternalApp-React/fms' element={<Fms/>} />
-		<Route exact path= 'SonaInternalApp-React/helpticket' element={<HelpTicketForm pullDatas={pullData}/>} />
-		<Route exact path= 'SonaInternalApp-React/contactus' element={<ContactUs />} />
-		<Route exact path= 'SonaInternalApp-React/yourticket' element={<HelpTicketData ticketDataArray={saveInputVal}/>} />
+		<Route exact path= '/' element={<Dashboard />} />
+		<Route exact path= '/form' element={<Form/>} />
+		<Route exact path= '/fms' element={<Fms/>} />
+		<Route exact path= '/helpticket' element={<HelpTicketForm pullDatas={pullData}/>} />
+		<Route exact path= '/contactus' element={<ContactUs />} />
+		<Route exact path= '/yourticket' element={<HelpTicketData ticketDataArray={saveInputVal}/>} />
 	</Routes>
 	</HashRouter>
 );
