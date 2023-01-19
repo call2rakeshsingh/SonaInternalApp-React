@@ -26,6 +26,7 @@ const FAQ = () => {
         id="accordionExample"
         style={{ minHeight: "300px" }}
       >
+        <h1 className="mb-2 mt-5 fw-bold" style={{color: "rgb(51, 51, 108)"}}>FAQ</h1>
         {FaqArr.map((val, ind) => {
           return (
             <div className="accordion-item">

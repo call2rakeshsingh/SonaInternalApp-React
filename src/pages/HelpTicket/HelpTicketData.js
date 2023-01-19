@@ -13,7 +13,7 @@ function HelpTicketData(props) {
         >
           <thead>
             <tr style={{ border: "1px solid gray" }}>
-              <th style={{ paddingLeft: "10px", border: "1px solid gray" }}>Raised By</th>
+              <th style={{border: "1px solid gray" }}>Raised By</th>
               <th style={{ border: "1px solid gray" }}>Branch Name</th>
               <th style={{ border: "1px solid gray" }}>Assistance With</th>
               <th style={{ border: "1px solid gray" }}>Issue Type</th>
@@ -25,7 +25,7 @@ function HelpTicketData(props) {
               return (
                 <>
                   <tr style={{ border: "1px solid gray" }} className="text-center">
-                    <td style={{ paddingLeft: "10px" }}>{val.yourName}</td>
+                    <td style={{ border: "1px solid gray" }}>{val.yourName}</td>
                     <td style={{ border: "1px solid gray" }}>{val.branchName}</td>
                     <td style={{ border: "1px solid gray" }}>{val.departName}</td>
                     <td style={{ border: "1px solid gray" }}>{val.issueType}</td>
